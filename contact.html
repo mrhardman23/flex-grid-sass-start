@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Grid | Advanced CSS</title>
+    <link rel="stylesheet" href="stylesheets/page-styling.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Prints</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Advanced CSS Website</h1>
+    </header>
+    <main>
+      <h2>CSS Grid Contact Form</h2>
+      <p>If you would like to contact me, please fill out the form below:</p>
+      <p id="warning">
+        Note: Please do not fill in your actual information as this website is
+        only for a school project.
+      </p>
+      <form method="get" action="javascript:location.reload();">
+        <label for="name">Full Name (First and Last) [required]:</label>
+        <input
+          type="text"
+          name="fullName"
+          id="name"
+          minlength="5"
+          maxlength="50"
+          required
+        />
+        <label for="email"
+          >Email Address (i.e. email@domain.com) [required]:</label
+        >
+        <input
+          type="email"
+          name="emailAddress"
+          id="email"
+          minlength="5"
+          maxlength="50"
+          required
+        />
+        <label for="phone"
+          >Phone Number (i.e. 1-888-867-5309) [required]:</label
+        >
+        <input
+          type="tel"
+          name="phoneNum"
+          id="phone"
+          minlength="14"
+          maxlength="16"
+          required
+        />
+        <label for="message">Please Enter Your Message Below:</label>
+        <textarea id="message" rows="10" cols="50"></textarea>
+        <input type="submit" value="Send Us Your Message!" />
+      </form>
+    </main>
+  </body>
+</html>
